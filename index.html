@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wissenschaftliche Hilfskraft</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/86d07c82a2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript\script.js">
+  </script>
+</head>
+
+<body onload="hide_next_button(); hide_ip_packet(); hide_table();">
+
+  <!-- TOP SECTION   -->
+
+  <!-- The link below is to refresh the page and to clear the cache stored.
+       The page reload button on Chrome brower works fine, but if we load the
+       same webpage on the firefox to force refresh the page every time we have
+       to press ctrl + f5. So the link below will do the same work as ctrl +f5.  -->
+
+  <a href="" onclick="window.location.href = window.location.href" class="refresh">Click here to refresh the page</a>
+  <div id="top_section" class="top_sec">
+    <div id="selection_box">
+      <i class="fas fa-caret-right icon"></i>
+      <label for="clientanfrage" id="client">Szenario</label>
+      <select id="dropDown_menu" name="selection_box" onchange="enableButton()">
+        <option value="blank"></option>
+        <option value="Clientanfrage">Clientanfrage an Server</option>
+      </select>
+    </div>
+    <button type="button" name="start" id="button" disabled value="Submit" onclick="start_button()">Start</button>
+    <button type="button" name="Next" id="button_1" onclick="next_button()">Next</button>
+  </div>
+
+  <!-- TABLES -->
+  <table class="routing_tabelle" id="routing_table">
+    <caption class="caption" id="table_1_caption">&nbsp;</caption>
+    <thead>
+      <tr>
+        <th>Zeil</th>
+        <th>Nächste input</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tbody>
+  </table>
+
+  <table class="arp_tabelle" id="arp_table">
+    <caption class="caption" id="table_2_caption">&nbsp;</caption>
+    <thead>
+      <tr>
+        <th>IP-Addresse</th>
+        <th>MAC-Addresse</th>
+        <th>Zeit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- MIDDLE SECTION (IMAGES) -->
+  <div id="middle_section_images">
+
+    <span id="name1" class="machine_label">WWW.Client</span>
+    <span id="name2" class="machine_label">Router</span>
+    <span id="name3" class="machine_label">Router</span>
+    <span id="name4" class="machine_label">WWW.Server</span>
+
+    <div class="image">
+      <img src="desktop.png" alt="" class="image_server">
+      <img src="link.png" alt="" class="image_link">
+      <img src="router.png" alt="" class="image_router">
+      <img src="link.png" alt="" class="image_link_1">
+      <img src="router.png" alt="" class="image_router_1">
+      <img src="link.png" alt="" class="image_link_2">
+      <img src="computer.png" alt="" class="image_server_1">
+    </div>
+
+    <div id="IP_MAC_1">
+      <span id="IP">129.13.3.108</span><br>
+      <span id="MAC">MAC_Client</span>
+    </div>
+    <div id="IP_MAC_2">
+      <span id="IP">129.13.3.60</span><br>
+      <span id="MAC">MAC-R1-1</span>
+    </div>
+    <div id="IP_MAC_3">
+      <span id="IP">133.2.2.3</span><br>
+      <span id="MAC">MAC-R1-2</span>
+    </div>
+    <div id="IP_MAC_4">
+      <span id="IP">133.2.2.7</span><br>
+      <span id="MAC">MAC-R2-1</span>
+    </div>
+    <div id="IP_MAC_5">
+      <span id="IP">145.5.9.19</span><br>
+      <span id="MAC">MAC-R2-2</span>
+    </div>
+    <div id="IP_MAC_6">
+      <span id="IP">145.5.9.27</span><br>
+      <span id="MAC">MAC-Server</span>
+    </div>
+  </div>
+  <img src="IP_Pakcet.PNG" alt="ip_packet" id="ip_packet" onclick="move_header()">
+
+  <!-- BOTTOM SECTION -->
+  <div id="bottom_section" class="bottom_sec">
+    <div class="client_server_information">
+      <p class="paragraph">
+        Sender : <span id='sender_text'>&nbsp;-</span>
+      </p>
+      <p class="paragraph">
+        Empfänger : <span id='receiver_text'>&nbsp;-</span>
+      </p>
+    </div>
+
+    <div class="information">
+      <p>
+        MAC-Adresse Sender : <span id='MAC_Adresse_Sender'>&nbsp;-</span>
+      </p>
+      <p>
+        MAC-Adresse Empfänger : <span id='MAC_Adresse_Empfänger'>&nbsp;-</span>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

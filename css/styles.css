@@ -1,0 +1,339 @@
+body {
+  margin: auto;
+  position: relative;
+  font-family: sans-serif;
+  width: 100%;
+  min-width: 600px;
+  max-width: 2000px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 479px) {
+  .top_sec {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 479px){
+  .image {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px)and (min-width: 479px) {
+  .bottom_sec {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*------------ TOP SECTION --------------- */
+.refresh {
+  position: absolute;
+}
+
+#button {
+  position: relative;
+  left: 270px;
+  bottom: 10px;
+}
+
+#button_1 {
+  position: absolute;
+  left: 570px;
+  top: 9.7px;
+}
+
+.icon {
+  color: #3498DB;
+}
+
+#top_section {
+  background-color: #dddddd;
+  height: 40px;
+  width: 70%;
+  margin: 10px auto 0 auto;
+  flex: 1 0 auto;
+}
+
+#selection_box {
+  position: relative;
+  bottom: 5px;
+  top: 10px;
+  left: 10px;
+}
+
+/*-------------- TABLE SECTION -------------------*/
+.routing_tabelle {
+  position: absolute;
+  border-collapse: collapse;
+  left: 310px;
+  top: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  flex: 1 0 auto;
+}
+
+.arp_tabelle {
+  position: absolute;
+  border-collapse: collapse;
+  left: 780px;
+  top: 130px;
+  flex: 1 0 auto;
+}
+
+th, td {
+  border: 2px solid #bbbbbb;
+  border-collapse: collapse;
+  width: 150px;
+}
+
+table.routing_tabelle td {
+  width: 100px;
+}
+
+table.arp_tabelle td {
+  width: 100px;
+}
+
+td:nth-child(3) {
+  text-align: center;
+}
+
+table.routing_tabelle th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f6f5f5;
+}
+
+table.arp_tabelle th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f6f5f5;
+}
+
+tr:nth-child(odd) {
+  background-color: #c7ffd8;
+}
+
+.caption {
+  text-align: center;
+  background-color: #3498DB;
+  border-style: solid;
+  font-size: 20px;
+  border-width: thin;
+  border-color: #838383;
+  color: white;
+}
+
+/*-------------- IMAGES -----------------------*/
+#middle_section_images {
+  margin: 150px auto 0 auto;
+}
+
+.image_server {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 100px;
+}
+
+.image_server_1 {
+  height: 130px;
+  width: 130px;
+  position: relative;
+  left: 270px;
+  top: 14px;
+}
+
+.image_link {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 130px;
+  bottom: 20px;
+}
+
+.image_link_1 {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 180px;
+  bottom: 20px;
+}
+
+.image_link_2 {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+}
+
+.image_router {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 150px;
+}
+
+.image_router_1 {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 210px;
+}
+
+.image {
+  text-align: center;
+  position: relative;
+  right: 220px;
+  bottom: 30px;
+  margin-top: 70px;
+  margin: 70px 0 0 0;
+  flex: 1 0 auto;
+}
+
+#ip_packet {
+  height: 20px;
+  position: relative;
+  top: 20px;
+  left: 310px;
+  flex: 1 0 auto;
+}
+
+/*----------------LABELS---------------*/
+.label_upper {
+  position: absolute;
+  flex: 1 0 auto;
+}
+
+#IP_MAC_1 {
+  position: absolute;
+  left: 330px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP_MAC_2 {
+  position: absolute;
+  left: 520px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP_MAC_3 {
+  position: absolute;
+  left: 610px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP_MAC_4 {
+  position: absolute;
+  left: 750px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP_MAC_5 {
+  position: absolute;
+  left: 850px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP_MAC_6 {
+  position: absolute;
+  left: 1030px;
+  top: 380px;
+  font-size: 13px;
+}
+
+#IP {
+  color: blue;
+}
+
+#MAC {
+  color: red;
+}
+
+#name1 {
+  position: relative;
+  left: 320px;
+  top: 65px;
+  font-weight: bold;
+}
+
+#name2 {
+  position: relative;
+  left: 475px;
+  top: 70px;
+  font-weight: bold;
+}
+
+#name3 {
+  position: relative;
+  left: 660px;
+  top: 70px;
+  font-weight: bold;
+}
+
+#name4 {
+  position: relative;
+  left: 830px;
+  top: 70px;
+  font-weight: bold;
+}
+
+/*---------------- BOTTOM SECTION --------------------*/
+#bottom_section {
+  background-color: #dddddd;
+  height: 90px;
+  width: 70%;
+  margin: 70px auto 0 auto;
+  position: absolute;
+  top: 540px;
+  left: 230px;
+  flex: 1 0 auto;
+}
+
+.client_server_information {
+  float: left;
+  position: relative;
+  left: 30px;
+  width: 280px;
+}
+
+.information {
+  float: right;
+  position: relative;
+  right: 250px;
+  width: 280px;
+}
+
+#MAC_Adresse_Sender {
+  position: absolute;
+  color: red;
+}
+
+#MAC_Adresse_Empfänger {
+  position: absolute;
+  color: red;
+}
+
+#receiver_text {
+  position: absolute;
+  color: blue;
+}
+
+#sender_text {
+  position: absolute;
+  color: blue;
+}
